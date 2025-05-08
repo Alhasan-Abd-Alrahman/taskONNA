@@ -1,0 +1,19 @@
+.topbar {
+    width: 100%;
+    margin-top: 0px;
+    height: 60px;
+    background-color: #f0e8e8;
+    color: rgb(21, 2, 2);
+    display: flex;
+    align-items: center;
+    padding: 0;
+    overflow: hidden;
+    transition: all 5s ease;
+  }
+  
+  .logo {
+    width: 250px;
+    height: auto;
+    opacity: 1;
+    transition: opacity 5s ease, transform 0.3s ease;
+  }

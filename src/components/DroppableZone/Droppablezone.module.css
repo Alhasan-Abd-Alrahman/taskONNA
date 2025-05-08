@@ -1,0 +1,86 @@
+.dropZone {
+  height: 100vh;
+  overflow-y: auto;
+  background-color: white;
+  padding-bottom: 90px;
+}
+.dropZoneActive {
+  background-color:  whitesmoke;
+}
+.gridItembox {
+  height: 100%;
+  border: 2px solid grey;
+  border-radius: 8px;
+  box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.5);
+}
+
+.widgetBox {
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  background-color: white;
+  color: black;
+  border: 2px solid rgba(255, 0, 0, 0);
+  height: 100%;
+  gap: 10px;
+  padding: 10px;
+  overflow: auto;
+}
+.widgetBox::-webkit-scrollbar {
+  display: none;
+}
+
+.textcard {
+  height: 100%;
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  overflow-y: auto;
+}
+.textcard::-webkit-scrollbar {
+  width: 3px;
+  height: 3px;
+}
+.textcard::-webkit-scrollbar-track {
+  background: transparent;
+  border-radius: 10px;
+}
+.textcard::-webkit-scrollbar-thumb {
+  background-color: rgba(100, 100, 100, 0.4);
+  border-radius: 10px;
+  transition: background-color 0.3s;
+}
+.textcard::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(100, 100, 100, 0.6);
+}
+
+.widgetImage {
+  width: 150px;
+  height: 160px;
+  border: 1px solid black;
+  border-radius: 5px;
+  object-fit: cover;
+}
+
+.closeButton {
+  width: 25px;
+  height: 25px;
+  color: red;
+  font-size: 18px;
+  border-radius: 50%;
+  border: 1px solid red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 12px;
+  right: -15px;
+  cursor: pointer;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease;
+  z-index: 100;
+}
+
+.closeButton:hover {
+  background-color: darkred;
+}

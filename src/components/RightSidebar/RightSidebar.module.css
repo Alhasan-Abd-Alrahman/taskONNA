@@ -1,0 +1,62 @@
+.sidebar {
+  position: absolute;
+  top: 0;
+  right: -350px;
+  width: 300px;
+  height: 100%;
+  background-color:white ;
+  color:#1D2E62;
+  padding: 10px 10px 60px 10px;
+  box-sizing: border-box;
+  transition: right 0.3s ease;
+  border-left: 2px solid #a19393;
+  z-index: 2;
+  overflow-x: visible; 
+
+}
+.open {
+  right: 0;
+}
+/* Tabsidebar*/
+.tabButton {
+  font-size: 16px;
+  border: none;
+  background-color: white;
+  color: #1D2E62;
+  margin: 8px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+.tabTrigger[data-state='active'] {
+  color:  #2870BD; 
+  border-bottom: 3px solid #5E79C1; 
+}
+
+.tabTrigger:hover {
+  color: #5E79C1; 
+}
+/* /////////////////////////////////////// */
+.filter_tags {
+  display: flex;
+  gap: 0.4rem;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+}
+.filter_button {
+  border: none;
+  background-color: #e0e0e0;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.filter_button:hover {
+  background-color: #d0d0d0;
+}
+
+.filter_button.active {
+  background-color: #bcd4fc;
+  color: #2c3e50;
+  font-weight: 600;
+}
